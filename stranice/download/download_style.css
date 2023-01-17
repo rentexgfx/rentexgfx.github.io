@@ -62,7 +62,8 @@ body {
 .btnDownload {
     position: relative;
     left: 7%;
-    background-color: var(--color-photoshop);
+    /*background-color: var(--color-photoshop);*/
+    background-color: rgb(255, 0, 0);
     border: none;
     border-radius: 10px;
     width: 160px;
