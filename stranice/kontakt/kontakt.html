@@ -1,0 +1,175 @@
+<html lang="en">
+
+<style>
+    .navigation {
+        position: fixed; /* nova linija */
+        top: 93%; /* nova linija */
+        right: 0;
+        left: 0;
+        bottom: auto;
+        background-color: #111;
+        height: 50px;
+        border-radius: 100px;
+        width: 16%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .navigation a{
+        position: relative;
+        display: inline-block;
+    }
+
+    .navigation img{
+        width: 28px;
+        margin: 12;
+        transition: 0.4s;
+    }
+
+    .navigation img:hover{
+        transform: scale(1.3);
+        filter: drop-shadow(0 0 0.50rem rgb(255, 255, 255));
+    }
+
+    .navigation a {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltip {
+        visibility: hidden;
+        width: 120px;
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        bottom: 115%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .navigation a:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .tooltip::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #111 transparent transparent transparent;
+    }
+
+    @media (max-width: 768px) {
+        .navigation {
+            width: 38%; /* full width for mobile */
+            height: 40px; /* smaller height for mobile */
+        }
+
+        .navigation img {
+            width: 20px; /* smaller size for mobile */
+            margin: 12px; /* smaller margin for mobile */
+        }
+        
+    }
+
+    @media (max-width: 512px) {
+        .navigation {
+            width: 43%; /* full width for mobile */
+            height: 40px; /* smaller height for mobile */
+        }
+
+        .navigation img {
+            width: 20px; /* smaller size for mobile */
+            margin: 8px; /* smaller margin for mobile */
+        }
+        
+    }
+
+    @media (max-width: 349px) {
+        .navigation {
+            width: 60%; /* full width for mobile */
+            height: 40px; /* smaller height for mobile */
+        }
+
+        .navigation img {
+            width: 20px; /* smaller size for mobile */
+            margin: 8px; /* smaller margin for mobile */
+        }
+        
+    }
+
+    @media (max-width: 1620px) {
+        .navigation {
+            width: 18%; /* full width for mobile */
+            height: 40px; /* smaller height for mobile */
+        }
+
+        .navigation img {
+            width: 20px; /* smaller size for mobile */
+            margin: 12px; /* smaller margin for mobile */
+        }
+        
+    }
+
+        
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Antonio Kolar - Portfolio</title>
+    <link rel="stylesheet" href="/stranice/kontakt/kontakt_style.css">
+</head>
+<body>
+    
+    <div class="navigation">
+        <nav>
+            <a href="/stranice/galerija/galerija.html"><img src="../../assets/navigation/picture.png"><span class="tooltip">Galerija</span></a>
+            <a href="/stranice/znanje/znanje.html"><img src="../../assets/navigation/graduation-cap.png"><span class="tooltip">Znanje</span></a>
+            <a href="../../../index.html"><img src="../../assets/navigation/home.png"><span class="tooltip">Početna</span></a>
+            
+            <a href="/stranice/download/download.html"><img src="../../assets/navigation/download.png"><span class="tooltip">Downloads</span></a>
+            <a href="kontakt.html"><img src="../../assets/navigation/envelope.png"><span class="tooltip">Kontakt</span></a>
+        </nav>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="avatar-box">
+        <img src="/assets/avatar.jpg" alt="">
+    </div>
+    <p class="title">Antonio Kolar</p>
+
+    <div class="container" style="display: flex;">
+        <div class="item">
+            <img id="ikonica" src="/assets/ikonice/instagram.png">
+            <p>@rentex._</p>
+        </div>
+        <div class="item">
+            <img id="ikonica" src="/assets/ikonice/telegram.png" >
+            <p>@kolarantonio</p>
+        </div>
+        <div class="item">
+            <img id="ikonica" src="/assets/ikonice/discord.png" >
+            <p>Rentex#9024</p>
+        </div>
+        <div class="item">
+            <img id="ikonica" src="/assets/ikonice/facebook.png" >
+            <p>Antonio Kolar</p>
+        </div>         
+      </div>
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    font-family: Montserrat;
+}
+
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 0.0rem rgb(255, 255, 255);
+    }
+    50% {
+        text-shadow: 0 0 2rem rgb(255, 255, 255);
+    }
+    100%{
+        text-shadow: 0 0 0.0rem rgb(255, 255, 255);
+    }
+}
+
+
+body {
+    background-color: rgb(34, 34, 34);
+    background: radial-gradient(ellipse at bottom, #131c27 0%, #111 100%);
+    overflow: auto;
+}
+
+#naslov {
+    font-size: 40;
+    color:aliceblue;
+    text-align: center;
+}
+
+.avatar-box img{
+    width: 180px;
+    border-radius: 100px;
+}
+
+.avatar-box {
+    display: grid;
+    place-items: center;
+    right:50%;
+    left: 50%;
+    margin: 50px;
+    filter: drop-shadow(0 0 90px rgb(38, 115, 179));
+}
+
+.title {
+    color:azure;
+    text-align: center;
+    font-size: 32px;
+    font-family: Montserrat Medium;
+    animation: shine 8s infinite;
+}
+
+.item{
+    text-align: center;
+    margin:30px;
+}
+
+.item p{
+    text-shadow: 0 0 15px #7a7a7a;
+}
+
+#ikonica {
+    width: 50px;
+    transition: transform .5s;
+}
+
+#ikonica:hover{
+    transform: scale(1.2);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color:rgb(196, 196, 196);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    
+    .item {
+        margin:10px;
+    }
+
+    #ikonica:hover{
+        transform: scale(1);
+    }
+
+    #ikonica {
+        width: 40px;
+        transition: transform .5s;
+    }
+
+    p {
+        color:rgb(196, 196, 196);
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+    
+}

@@ -1,0 +1,64 @@
+* {
+    font-family: Montserrat;
+}
+
+
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 0.0rem rgb(255, 255, 255);
+    }
+    50% {
+        text-shadow: 0 0 2rem rgb(255, 255, 255);
+    }
+    100%{
+        text-shadow: 0 0 0.0rem rgb(255, 255, 255);
+    }
+}
+
+
+body {
+    background-color: rgb(34, 34, 34);
+    background: radial-gradient(ellipse at bottom, #131c27 0%, #111 100%);
+    overflow: hidden;
+}
+
+.avatar-box img{
+    width: 180px;
+    border-radius: 100px;
+}
+
+.avatar-box {
+    display: grid;
+    place-items: center;
+    right:50%;
+    left: 50%;
+    margin: 50px;
+    filter: drop-shadow(0 0 90px rgb(38, 115, 179));
+}
+
+.title {
+    color:azure;
+    text-align: center;
+    font-size: 32px;
+    font-family: Montserrat Medium;
+    animation: shine 8s infinite;
+}
+
+
+.slicice-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slicice-box img {
+    width: 28;
+    padding: 3px;
+}
+
+.desc{
+    color:rgb(204, 204, 204);
+    text-align: center;
+    line-height: 27px;
+}
+

@@ -1,0 +1,128 @@
+
+
+:root {
+    --color-photoshop: rgb(0, 169, 255);
+    --color-premiere: rgb(154, 154, 255);
+}
+
+* {
+    font-family: Montserrat;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    background: radial-gradient(ellipse at bottom, #131c27 0%, #111 100%);
+    overflow: auto;
+}
+
+#naslov {
+    color:aliceblue;
+    text-align: center;
+    font-size: 40px;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    border: 2px var(--color-photoshop) solid;
+    width: 40%; 
+    height: 200px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 2rem  rgb(0, 162, 255, 0.15);
+    word-wrap: break-word;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+    
+.info-icon {
+    width: 130px;
+    padding: 33px;
+}
+
+.info-title {
+    font-size: 180%;
+    font-weight: 600;
+    color: var(--color-photoshop);
+    margin-bottom: 5px; /* smanjite razmak između "info-title" i "info-desc" za 5px */
+}
+
+.info-desc{
+    margin-top: 0;
+    color:rgb(177, 177, 177)
+}
+
+#premiere {
+    border-color: var(--color-premiere);
+    box-shadow: 0 0 2rem  rgb(154, 154, 255, 0.15);
+}
+
+#premiere h3{
+    color: var(--color-premiere)
+}
+
+
+
+#aftereffects {
+    border-color: var(--color-premiere);
+    box-shadow: 0 0 2rem  rgb(154, 154, 255, 0.15);
+}
+
+#aftereffects h3{
+    color: var(--color-premiere)
+}
+
+
+
+#python {
+    border-color: #77BBAA;
+    box-shadow: 0 0 2rem rgb(119, 187, 170, 0.15);
+}
+
+#python h3{
+    background: -webkit-linear-gradient(-45deg,#0091ff, #ffd43b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
+}
+
+#paper {
+    border-color: rgb(192, 192, 192);
+    box-shadow: 0 0 2rem  rgba(184, 184, 184, 0.15);
+}
+
+#paper h3{
+    color: rgb(204, 204, 204)
+}
+
+
+#skript {
+    border-color: rgb(249, 82, 85);
+    box-shadow: 0 0 2rem  rgb(249, 82, 85, 0.15);
+}
+
+#skript h3{
+    color: rgb(249, 82, 85);
+}
+
+
+@media (max-width: 768px) {
+    .info-block {
+    width: 100%;
+    height: auto; 
+    }
+    .info-icon {
+    width: 100px; 
+    }
+    .info-title {
+    font-size: 120%; 
+    }
+}

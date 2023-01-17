@@ -1,0 +1,210 @@
+<html lang="en">
+
+<style>
+    .navigation {
+        position: fixed; /* nova linija */
+        top: 93%; /* nova linija */
+        right: 0;
+        left: 0;
+        bottom: auto;
+        background-color: #111;
+        height: 50px;
+        border-radius: 100px;
+        width: 16%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .navigation a{
+        position: relative;
+        display: inline-block;
+    }
+
+    .navigation img{
+        width: 28px;
+        margin: 12;
+        transition: 0.4s;
+    }
+
+    .navigation img:hover{
+        transform: scale(1.3);
+        filter: drop-shadow(0 0 0.50rem rgb(255, 255, 255));
+    }
+
+    .navigation a {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltip {
+        visibility: hidden;
+        width: 120px;
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        bottom: 115%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .navigation a:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .tooltip::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #111 transparent transparent transparent;
+    }
+
+    @media (max-width: 768px) {
+        .navigation {
+            width: 38%; /* full width for mobile */
+            height: 40px; /* smaller height for mobile */
+        }
+
+        .navigation img {
+            width: 20px; /* smaller size for mobile */
+            margin: 12px; /* smaller margin for mobile */
+        }
+        
+    }
+
+    @media (max-width: 512px) {
+        .navigation {
+            width: 43%; /* full width for mobile */
+            height: 40px; /* smaller height for mobile */
+        }
+
+        .navigation img {
+            width: 20px; /* smaller size for mobile */
+            margin: 8px; /* smaller margin for mobile */
+        }
+        
+    }
+
+    @media (max-width: 349px) {
+        .navigation {
+            width: 60%; /* full width for mobile */
+            height: 40px; /* smaller height for mobile */
+        }
+
+        .navigation img {
+            width: 20px; /* smaller size for mobile */
+            margin: 8px; /* smaller margin for mobile */
+        }
+        
+    }
+
+    @media (max-width: 1620px) {
+        .navigation {
+            width: 18%; /* full width for mobile */
+            height: 40px; /* smaller height for mobile */
+        }
+
+        .navigation img {
+            width: 20px; /* smaller size for mobile */
+            margin: 12px; /* smaller margin for mobile */
+        }
+        
+    }
+
+        
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Znanje - Antonio Kolar - Portfolio</title>
+    <link rel="stylesheet" href="/stranice/znanje/znanje_style.css">
+</head>
+<body>
+    
+    <div class="navigation">
+        <nav>
+            <a href="/stranice/galerija/galerija.html"><img src="../../assets/navigation/picture.png"><span class="tooltip">Galerija</span></a>
+            <a href="znanje.html"><img src="../../assets/navigation/graduation-cap.png"><span class="tooltip">Znanje</span></a>
+            <a href="../../../index.html"><img src="../../assets/navigation/home.png"><span class="tooltip">Početna</span></a>
+            
+            <a href="/stranice/download/download.html"><img src="../../assets/navigation/download.png"><span class="tooltip">Downloads</span></a>
+            <a href="/stranice/kontakt/kontakt.html"><img src="../../assets/navigation/envelope.png"><span class="tooltip">Kontakt</span></a>
+        </nav>
+    </div>
+
+    <br><br><br><br>
+    <h1 id="naslov">Znanje & Iskustvo</h1>
+    <br>
+
+    
+
+    <div class="info-block">
+        <img src="../../assets/photoshop.png" alt="" class="info-icon">
+        <div class="info-text">
+            <h3 class="info-title">Adobe Photoshop</h3>
+            <p class="info-desc">4 godine iskustva <br>Manipulacija, UI dizajn, dizajn logotipa, korekcija boja...</p>
+        </div>
+    </div>
+
+    <div class="info-block" id="premiere">
+        <img src="../../assets/premiere-pro.png" alt="" class="info-icon">
+        <div class="info-text">
+            <h3 class="info-title">Adobe Premiere Pro</h3>
+            <p class="info-desc">2 godine iskustva<br>Osnovno uređivanje videozapisa, korištenje keyframe-ova, <br>korištenje maski (eng. Layer mask), Track motion...<br></p>
+        </div>
+    </div>
+
+    <div class="info-block" id="aftereffects">
+        <img src="../../assets/after-effects.png" alt="" class="info-icon">
+        <div class="info-text">
+            <h3 class="info-title">Adobe After Effects</h3>
+            <p class="info-desc">1 godina iskustva <br>Track motion, upravljanje efektima & manipulacija, animacija...</p>
+        </div>
+    </div>
+
+    <div class="info-block" id="python">
+        <img src="../../assets/python.png" alt="" class="info-icon">
+        <div class="info-text">
+            <h3 class="info-title">Python</h3>
+            <p class="info-desc">6 godina iskustva <br> Programska sintaksa, (Tkinter, FTPretty, OS, YAML, MCRcon, <br>
+            PySQL), funkcije, klase, liste, dictionary...</p>
+        </div>
+    </div>
+
+    <div class="info-block" id="paper">
+        <img src="../../assets/paper.png" alt="" class="info-icon">
+        <div class="info-text">
+            <h3 class="info-title">Minecraft Server Developer</h3>
+            <p class="info-desc">7 godina iskustva <br>Poznavanje funkcionalnosti servera,
+            SFTP & FTP protokoli, instalacija & podešavanje plugin-ova/datapack-ova, <br>
+            potpuna optimizacija konfiguracije, skriptanje, administracija...</p>
+        </div>
+    </div>
+
+    <div class="info-block" id="skript">
+        <img src="../../assets/skript.png" alt="" class="info-icon">
+        <div class="info-text">
+            <h3 class="info-title">Minecraft SkriptLang</h3>
+            <p class="info-desc">1 godina iskustva <br>Sintaksa, izrada posebnih skripti, izrada pomoćnih
+            funkcija, povezivanje skripti sa YAML konfiguracijom, <br>
+            baze podataka...</p>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+
+</body>
+</html>
