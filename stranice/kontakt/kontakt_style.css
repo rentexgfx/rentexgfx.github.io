@@ -45,7 +45,7 @@ body {
     color:azure;
     text-align: center;
     font-size: 32px;
-    font-family: Montserrat Medium;
+    font-weight: 600;
     animation: shine 8s infinite;
 }
 
